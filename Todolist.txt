@@ -1,0 +1,33 @@
+private void button1_Click(object sender, EventArgs e)
+{
+    var name = textBox1.Text;
+    listBox1.Items.Add(name);
+    textBox1.Text = name;
+}
+
+private void button2_Click(object sender, EventArgs e)
+{
+    var index = listBox1.SelectedIndex;
+    listBox1.Items.RemoveAt(index);
+}
+
+private void button3_Click(object sender, EventArgs e)
+{
+    Clear();
+}
+
+private void textBox1_TextChanged(object sender, EventArgs e)
+{
+
+}
+
+private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+{
+
+}
+#region
+public void Clear()
+{
+    textBox1.Clear();
+}
+#endregion
